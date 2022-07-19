@@ -3,9 +3,10 @@ CREATE DATABASE employees;
 USE employees;
 CREATE TABLE department (
   id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  -- // department_name varchar(30) not null
   name VARCHAR(30) UNIQUE NOT NULL
 );
-CREATE TABLE role (
+CREATE TABLE employee_role (
   id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
   title VARCHAR(30) UNIQUE NOT NULL,
   salary DECIMAL UNSIGNED NOT NULL,
